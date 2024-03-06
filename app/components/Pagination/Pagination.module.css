@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.button{
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    border-radius: 20px;
+}
+
+.button:disabled{
+    cursor: not-allowed;
+    background-color: transparent;
+    color: var(--secondary-font-color);
+}
+
+.pages{
+    color: var(--text-color-inside-field);
+}

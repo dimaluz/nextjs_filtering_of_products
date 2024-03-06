@@ -1,76 +1,47 @@
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');               
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-  --max-width: 1100px;
-  --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --background-color: black;
+    --nav-background-color: linear-gradient(190deg, #1a1c25, #13151a, #0f1012, #0a0b0c, #070708, #040404, #000000);
+    --nav-shadow: rgba(177, 177, 186, 0.2) 0px 18px 50px -10px;
+    --border-items-color: 1px solid #6e6f71;
+    --text-color: #9ea1a7;
+    --border-btn-color: 1px solid #2c2d2e;
+    --border-items-color-hover: 1px solid rgb(177, 177, 186);
 
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    /* Tab color palette */
+    --tab-color: #34383c;
+    --plate-bg-color: rgba(0,0,0,0.7);
+    --plate-color: linear-gradient(140deg, #1a1c25, #13151a, #0f1012, #0a0b0c, #070708, #040404, #000000);
+    --border-plate-color: 1px solid #242526;
+    --status-color-active: linear-gradient(180deg,rgb(166, 247, 166), rgb(131, 206, 131), rgb(88, 152, 88), rgb(64, 99, 64), rgb(48, 67, 48));
+    --status-color-draft: linear-gradient(180deg,rgb(237, 244, 237), rgb(205, 210, 205), rgb(147, 150, 147), rgb(98, 100, 98), rgb(64, 66, 64));
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+    /* Button color palette */
+    --button-color: linear-gradient(180deg, rgb(59, 143, 233), rgb(51, 126, 207), rgb(45, 107, 174), rgb(36, 88, 145), rgb(27, 67, 110));
+    --button-color2: linear-gradient(180deg, #5E5DF0, #5454db, #4545b5, #3a3a98, #34348a);
+    --btn-black-color: linear-gradient(140deg, #1a1c25, #13151a, #0f1012, #0a0b0c, #070708, #040404, #000000);
+    
+    --btn-black-shadow: rgba(177, 177, 186, 0.16) 0px 3px 6px, rgba(177, 177, 186, 0.23) 0px 3px 6px;
+    --button-shadow: rgba(59, 143, 233, 0.17) 0px -23px 25px 0px inset, rgba(51, 126, 207, 0.15) 0px -36px 30px 0px inset, rgba(45, 107, 174, 0.1) 0px -79px 40px 0px inset, rgba(36, 88, 145, 0.06) 0px 2px 1px, rgba(27, 67, 110, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; 
+   
+    --msg-tab-shadow: rgba(110,111,113, 0.12) 0px 1px 3px, rgba(110,111,113, 0.24) 0px 1px 2px;
+    --msg-tab-shadow2: rgba(138, 148, 155, 0.3) 0px 1px 2px 0px, rgba(161, 170, 177, 0.15) 0px 2px 6px 2px;
+    --msg-tab-shadow-active: rgba(94,93,240, 0.1) 0px 8px 24px, rgba(94,93,240, 0.1) 0px 16px 56px, rgba(94,93,240, 0.1) 0px 24px 80px;
 
-  --tile-start-rgb: 239, 245, 249;
-  --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
+    --checkbox-color: #5E5DF0;
+    --checkbox-bgc: rgb(177, 177, 186);
 
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --card-rgb: 180, 185, 188;
-  --card-border-rgb: 131, 134, 135;
-}
+    --msgtab-shevron-shadow: rgba(177, 177, 186, 0.25) 0px 0.0625em 0.0625em, rgba(177, 177, 186, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* Font style */
+    --header-color: white;
+    --secondary-font-color: #2c2d2e;
+    --text-color-inside-field: #484b4e;
 
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
 }
 
 * {
@@ -83,16 +54,10 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--background-color);
+  background-size: cover;
+  font-family: "Poppins";
+  color: var(--text-color);
 }
 
 a {
@@ -100,8 +65,4 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+
